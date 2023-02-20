@@ -10,6 +10,8 @@ const controller = {
 
     fs.writeFileSync(__dirname + "/datos.json", datoConvertido);
 
+    console.log("el dato que llegó es: " + req.params.dato);
+
     res.send(req.params.dato);
   },
 };
